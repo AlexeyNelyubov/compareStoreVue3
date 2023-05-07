@@ -9,7 +9,7 @@ const counterStore = useCounterStore();
   <main class="pinia">
     <p class="pinia__item">Pinia</p>
     <div class="pinia__store-manipulate">
-      <button class="pinia__store-function" @click="counterStore.decriment">
+      <button class="pinia__store-function" @click="counterStore.decrement">
         -
       </button>
       <button class="pinia__store-function" @click="counterStore.increment">

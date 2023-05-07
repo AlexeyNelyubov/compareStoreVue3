@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import PiniaStore from "/src/components/PiniaStore.vue";
+import VuexStore from "/src/components/VuexStore.vue";
 
 const currentStore = ref("");
 </script>
@@ -19,6 +20,7 @@ const currentStore = ref("");
   </header>
   <main>
     <PiniaStore v-if="currentStore === 'Pinia'" />
+    <VuexStore v-if="currentStore === 'Vuex'" />
   </main>
 </template>
 
