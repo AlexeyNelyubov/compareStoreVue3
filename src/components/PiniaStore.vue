@@ -17,7 +17,9 @@ const counterStore = useCounterStore();
       </button>
     </div>
     <p class="pinia__item">count - {{ counterStore.count }}</p>
-    <p class="pinia__item">count x2 - {{ counterStore.doubleCount }}</p>
+    <p class="pinia__item">
+      count<sup>2</sup> = {{ counterStore.doubleCount }}
+    </p>
   </main>
 </template>
 
@@ -38,7 +40,7 @@ const counterStore = useCounterStore();
 }
 
 .pinia__store-function {
-  margin-right: 24px;
+  margin: 0 24px;
   padding: 12px 24px;
   font: 40px cursive;
   background-color: #fff;

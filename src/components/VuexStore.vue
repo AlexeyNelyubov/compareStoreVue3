@@ -1,8 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
-import { useCounterStore } from "/src/stores/PiniaCounter.js";
 import { useStore } from "vuex";
-// import { mapGetters } from "vuex";
 
 const counterStore = useStore();
 </script>
@@ -26,7 +23,7 @@ const counterStore = useStore();
     </div>
     <p class="vuex__item">count - {{ counterStore.state.VuexStore.count }}</p>
     <p class="vuex__item">
-      count x2 - {{ counterStore.getters["VuexStore/doubleCount"] }}
+      count<sup>2</sup> = {{ counterStore.getters["VuexStore/doubleCount"] }}
     </p>
   </main>
 </template>
@@ -48,7 +45,7 @@ const counterStore = useStore();
 }
 
 .vuex__store-function {
-  margin-right: 24px;
+  margin: 0 24px;
   padding: 12px 24px;
   font: 40px cursive;
   background-color: #fff;
